@@ -332,10 +332,6 @@
 <section>
 <section id="section" class="title-slide slide level1 center">
 <h1></h1>
-<!---
-# TODO: this does not work
- ![](imagenes/logo_portada2.png){.center style="width: 20%;"}   
---->
 <p><span class="linea-superior"></span> <span class="linea-inferior"></span></p>
 <!---
  <img src="imagenes/logo_portada2.png" style="width: 20%"/>  
@@ -345,14 +341,6 @@
 <p><span class="medium-par.center-justified"><strong>Proyecto Ciencia de Datos</strong></span></p>
 <p><span class="small-par.center-justified"><strong>Unidad de Gobierno de Datos</strong></span></p>
 <p><span class="big-par center-justified"><strong>Diciembre 2024</strong></span></p>
-<!-- descripción de las cosas que se hacen con yolo -->
-<!-- mostrar la variedad de modelos yolo que existen -->
-<!-- arquitectura:  -->
-<!-- - ¿Como se compone? ¿Que ocurre en cada una de esos ejes: Neck, BackBones, Head? -->
-<!-- - comentar algunas partes de interés en cada una de esos ejes como el feature map, data augmentation etc -> que descomposiciones se debe realizar para que logremos capturar la imagen (procesamiento del input, muy a grandes rasgos (Neck)) -->
-<!-- Performance (medidas) -->
-<!-- mostrar el ejemplito de comparación entre versiones yolo -->
-<!-- modelo YOLO-World ->  -->
 </section>
 <section id="contenidos" class="slide level2">
 <h2>Contenidos</h2>
@@ -379,7 +367,7 @@
 <p><span class="center big-par">Miremos nuestro alrededor ¿cuántos objetos pueden identificar?</span></p>
 <p><span class="center"><img src="imagenes/plots/lupa.png" width="20%"></span></p>
 <div class="fragment">
-<!-- Los humanos, podemos reconocer objetos en imágenes en milisegundos. Miramos toda la imagen, entendemos el contexto, y sabemos que un objeto es una taza porque está junto a un plato y no flotando en el aire. Pero las computadoras no tienen esa intuición. Necesitan que les demos reglas claras para identificar qué están viendo y dónde lo están viendo -->
+<!-- Los humanos, podemos reconocer objetos en imágenes en milisegundos. Miramos toda la imagen, entendemos el contexto, y sabemos que un objeto es x porque z y no flotando en el aire. Pero las computadoras no tienen esa intuición. Necesitan que les demos reglas claras para identificar qué están viendo y dónde lo están viendo -->
 <p><span class="center big-par">¿Cómo le enseñamos a una máquina no solo a reconocer objetos, sino a decirnos exactamente dónde están?</span></p>
 </div>
 </section>
@@ -496,15 +484,10 @@
 <h2>¿Qué es YOLO? (3/3)</h2>
 <div class="medium-par">
 <ul>
-<li class="fragment"><p>Para entrenar al modelo, muy a grandes rasgos:</p>
+<li class="fragment"><p>Para entrenar el modelo, muy a grandes rasgos:</p>
 <p><span class="center"><img src="imagenes/plots/yolo3.PNG" width="70%&quot;/"></span></p></li>
 </ul>
 </div>
-<!-- - Pasamos toda la información de la imagen por la red y obtenemos las coordenadas con sus clases correspondientes para cada objeto -->
-<!-- YOLO: -->
-<!--   - Dividir imagen, se divide en cuadriculas (SxS), en donde cada celda es responsable de detectar objetos que caigan dentro de la region -->
-<!--   - Predicción en cada celda, ¿Existe un objeto aqui? ¿cuál? -> retorna las coordenadas -->
-<!--   - Limpieza de los Bounding Boxes, las celdas cercanas pueden predecir el mismo objeto con pequeñas diferencias -> se eliminan las predicciones supuestas descartando las menos confiables con Non-Maximum Suppression -->
 <!-- ## Comparación YOLO vs Métodos Anteriores -->
 <!-- Velocidad: -->
 <!-- R-CNN procesa regiones por separado; YOLO procesa todo de una vez. -->
@@ -574,7 +557,9 @@
 <h2>Conclusiones 🚀</h2>
 <div class="medium-par">
 <ul>
-<li class="fragment">Como hemos visto, el alcance de YOLO ha</li>
+<li class="fragment"><p>Como hemos visto, YOLO ha revolucionado la forma de detectar objetos y continua en crecimiento adoptando nuevas metodologías para el usuario</p></li>
+<li class="fragment"><p>Su implementación es muy sencilla y cuenta con documentación muy detallada</p></li>
+<li class="fragment"><p>En sintesis, es un tanque jajaj</p></li>
 </ul>
 </div>
 </section>

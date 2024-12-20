@@ -39,19 +39,6 @@ engine: knitr
 
 
 
-<!-- descripción de las cosas que se hacen con yolo -->
-<!-- mostrar la variedad de modelos yolo que existen -->
-<!-- arquitectura:  -->
-<!-- - ¿Como se compone? ¿Que ocurre en cada una de esos ejes: Neck, BackBones, Head? -->
-<!-- - comentar algunas partes de interés en cada una de esos ejes como el feature map, data augmentation etc -> que descomposiciones se debe realizar para que logremos capturar la imagen (procesamiento del input, muy a grandes rasgos (Neck)) -->
-
-<!-- Performance (medidas) -->
-
-<!-- mostrar el ejemplito de comparación entre versiones yolo -->
-
-<!-- modelo YOLO-World ->  -->
-
-
 ## Contenidos  
 
 ::: {.medium-par}
@@ -246,27 +233,11 @@ Segunda iteración:
 
 :::{.incremental .medium-par}
 
-- Para entrenar al modelo, muy a grandes rasgos:
+- Para entrenar el modelo, muy a grandes rasgos:
 
     [<img src="imagenes/plots/yolo3.PNG" width=70%"/>]{.center} 
 
 :::
-
-
-
-
-
-<!-- - Pasamos toda la información de la imagen por la red y obtenemos las coordenadas con sus clases correspondientes para cada objeto -->
-
-
-
-
-<!-- YOLO: -->
-<!--   - Dividir imagen, se divide en cuadriculas (SxS), en donde cada celda es responsable de detectar objetos que caigan dentro de la region -->
-<!--   - Predicción en cada celda, ¿Existe un objeto aqui? ¿cuál? -> retorna las coordenadas -->
-<!--   - Limpieza de los Bounding Boxes, las celdas cercanas pueden predecir el mismo objeto con pequeñas diferencias -> se eliminan las predicciones supuestas descartando las menos confiables con Non-Maximum Suppression -->
-
-
 
 
 
@@ -365,7 +336,11 @@ Ejemplos:
 
 :::{.incremental .medium-par}
 
-- Como hemos visto, YOLO es un tanque
+- Como hemos visto, YOLO ha revolucionado la forma de detectar objetos y continua en crecimiento adoptando nuevas metodologías para el usuario
+
+- Su implementación es muy sencilla y cuenta con documentación muy detallada
+
+- En sintesis, es un tanque jajaj
 
 :::
 
